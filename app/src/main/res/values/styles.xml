@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorWhite</item>
+
+        <item name="android:spinnerItemStyle">@style/headline</item>
+        <item name="spinnerDropDownItemStyle">@style/medium</item>
+    </style>
+
+    <style name="headline" parent="TextAppearance.AppCompat.Display2">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="medium" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="CustomButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorWhite</item>
+    </style>
+
+    <style name="CustomSwitch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+</resources>

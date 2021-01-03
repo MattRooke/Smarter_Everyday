@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">SmarterEveryday</string>
+    <string name="title">Smarter Everyday</string>
+    <string name="play">Play!</string>
+    <string name="default_fact">Fact of the day:</string>
+    <string name="scores">Scores</string>
+    <string name="save">Save</string>
+    <string name="game_difficulty">Game Difficulty:</string>
+    <string name="online">Online</string>
+    <string name="sound">Sound</string>
+    <string name="days_in_a_row">Days in a row:</string>
+    <string name="days_default">0</string>
+    <string name="you_won">Good job you won!</string>
+    <string name="game_over">Game over!</string>
+    <string name="the_number_was">The number was: %1$s</string>
+    <string name="wrong">Wrong, try again.</string>
+    <string name="correct">Correct!</string>
+    <string name="remember">Remember the number!</string>
+    <string name="what_was_number">What was the number?</string>
+    <string name="game1_name">Memory Builder:</string>
+    <string name="game2_name">Ball Drop:</string>
+    <string name="game3_name">Colour-doku:</string>
+    <string name="name_hint">Enter your name!</string>
+
+    <string name="info_button_description">Game information button</string>
+    <string name="game1_button_description">Memory builder screenshot</string>
+    <string name="game2_button_description">Ball drop screenshot</string>
+    <string name="game3_button_description">Colour-doku screenshot</string>
+    <string name="logo_description">a brain logo</string>
+    <string name="settings_cog_description">settings cog</string>
+    <string name="back_arrow">back arrow</string>
+
+    <string name="score_displayer">Score: %1$d</string>
+    <string name="ball_displayer">balls: %1$d</string>
+    <string name="welcome_back">Welcome back %s!</string>
+    <string name="finish_game">Finish!</string>
+
+
+    <string-array name="difficulty">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+        <item>Expert</item>
+    </string-array>
+    <string-array name="games">
+        <item>Days in a Row</item>
+        <item>Memory Builder</item>
+        <item>Ball Drop</item>
+    </string-array>
+
+</resources>

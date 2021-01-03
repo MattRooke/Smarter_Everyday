@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    tools:context=".GameActivity"
+    android:clickable="true"
+    android:focusable="true">
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game1_name"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_game1"
+        app:layout_constraintTop_toBottomOf="@+id/textView_days" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game2_name"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_game2"
+        app:layout_constraintTop_toBottomOf="@+id/textView_days" />
+
+    <ImageButton
+        android:id="@+id/imageButton_back"
+        android:layout_width="96dp"
+        android:layout_height="85dp"
+        android:background="@drawable/ic_arrow_back_black_24dp"
+        android:contentDescription="@string/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/days_in_a_row"
+        android:textColor="@color/colorWhite"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/days_default"
+        android:textColor="@color/colorWhite"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_title"
+        app:layout_constraintStart_toEndOf="@+id/textView_title"
+        app:layout_constraintTop_toTopOf="@+id/textView_title"
+        app:layout_constraintVertical_bias="0.489"
+        app:layout_goneMarginStart="1dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton_game1"
+        android:layout_width="240dp"
+        android:layout_height="185dp"
+        android:contentDescription="@string/game1_button_description"
+        android:cropToPadding="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/memory_builder_screenshot"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_game2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <ImageButton
+        android:id="@+id/imageButton_game2"
+        android:layout_width="240dp"
+        android:layout_height="185dp"
+        android:contentDescription="@string/game2_button_description"
+        android:cropToPadding="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ball_drop_screenshot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <ImageButton
+        android:id="@+id/imageButton_game1_info"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_info_outline_black_24dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_game1"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_game1"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_game1"
+        android:contentDescription="@string/info_button_description" />
+
+    <ImageButton
+        android:id="@+id/imageButton_game2_info"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_info_outline_black_24dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_game2"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_game2"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_game2"
+        android:contentDescription="@string/info_button_description" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_game2_info" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
